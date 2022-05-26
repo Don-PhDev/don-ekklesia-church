@@ -18,10 +18,10 @@ gem "puma", "~> 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
-# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
+# Hotwire"s SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
-# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
+# Hotwire"s modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
@@ -40,7 +40,7 @@ gem "devise"
 gem "activeadmin"
 gem "activeadmin_quill_editor"
 gem "activeadmin_addons"
-gem 'active_admin_theme'
+gem "active_admin_theme"
 gem "pagy", "~> 5.10"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -64,6 +64,7 @@ group :development, :test do
   gem "faker"
   gem "rspec-rails"
   gem "factory_bot_rails"
+  gem "shoulda-matchers"
 end
 
 group :development do
