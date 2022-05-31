@@ -6,15 +6,10 @@ RSpec.describe Post, type: :model do
   end
 
   describe "validations" do
-    let(:user) { build(:user) }
-
     it { should validate_presence_of(:title) }
     it { should validate_presence_of(:content) }
 
-    it "is not valid without a title" do
-      post = Post.new(title: nil)
-      expect(post).to_not be_valid
-    end
+    let(:user) { build(:user) }
 
     subject {
       described_class.new(
